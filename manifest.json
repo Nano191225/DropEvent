@@ -1,0 +1,38 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "DropEvent",
+		"description": "Developed by Nano191225.",
+		"uuid": "2fd768aa-db56-4e61-94e2-59b878d63b6c",
+		"version": [ 1, 0, 0 ],
+		"min_engine_version": [ 1, 20, 40 ]
+	},
+	"metadata": {
+		"authors": ["Nano191225"],
+		"url": "https://github.com/Nano191225/DropEvent"
+	},
+	"modules": [{
+			"type": "data",
+			"uuid": "eb4bb382-cf89-4d6d-893c-ceb7d888c626",
+			"version": [ 1, 0, 0 ]
+		},
+		{
+			"description": "DatabaseMC",
+			"language": "javascript",
+			"type": "script",
+			"uuid": "011d2b05-207f-4b98-89b1-b2020ad8a5c8",
+			"version": [ 1, 0, 0 ],
+			"entry": "scripts/index.js"
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.7.0-beta"
+		},
+        {
+			"module_name": "@minecraft/server-ui",
+			"version": "1.2.0-beta"
+		}
+	]
+}
