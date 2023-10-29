@@ -50,9 +50,10 @@ world.afterEvents.entitySpawn.subscribe(entitySpawn => {
             const inventoryItem = inventoryItems[0];
             const inventoryItemIndex = playerInventory.indexOf(inventoryItem);
             const inventoryItemStack = container.getItem(inventoryItemIndex);
-            if (!inventoryItemStack) return;
-            inventoryItemStack.amount += itemStack.amount;
-            container.setItem(inventoryItemIndex, inventoryItemStack);
+            if (inventoryItemStack) {
+                inventoryItemStack.amount += itemStack.amount;
+                container.setItem(inventoryItemIndex, inventoryItemStack);    
+            } else container.setItem(inventoryItemIndex, itemStack);
         } else {
             container.addItem(itemStack);
         }
