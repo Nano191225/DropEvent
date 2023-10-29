@@ -1,6 +1,6 @@
 /**
  * @license MIT
- * @version 1.0.0
+ * @version 1.0.1
  * Supported Minecraft version
  * @version 1.20.40
  * @author @Nano191225
